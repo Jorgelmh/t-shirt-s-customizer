@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- My report and explanation of the code is in the README.txt file -->
+    <header class="header-order">
+        <div class="top-header">
+            <div class="companyName">
+                <a href="index.html">VeneShirts</a>
+            </div>
+            <nav class="references disp-flex-spc-around">
+                <p><a href="#">sign up</a></p>
+                <p><a href="#">Sign in</a></p>
+                <p><a href="#">contact</a></p>
+            </nav>
+        </div>
+    </header>
+    <main class="container site-edit-shirt">
+        <h1>Classic T-shirt</h1>
+        <div>
+            <div class="edit-canvas">
+                <canvas id="mycanvas" width="600" height="400">Your Browser can't display canvas features</canvas>
+            </div>
+            <div class="shirt-info">
+                <form action="submit.php" class="shirt-form" method="POST">
+                    <div class="input-elements" style="margin-bottom: 20%;">
+                        <div class="flex-item">
+                            <label style="width: 20%;">Color:</label>
+                            <div class="colors input-items">
+                                <button type="button" class="single-colors selected-color" style="background-color:#fc3b00;" id="red"><i class="fas fa-check"></i></button>
+                                <button type="button" class="single-colors" style="background-color:#0753f7;" id="blue"></button>
+                                <button type="button" class="single-colors" style="background-color:#9b6b23;" id="brown"></button>
+                                <button type="button" class="single-colors" style="background-color:#8b07f7;" id="purple"></button>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <label style="width: 20%;">Text:</label>
+                            <input type="text" class="input-items" id="shirt-text" name="shirt-text" placeholder="Put your text here">
+                        </div>
+                        <div class="disp-flex-spc-between">
+                            <div class="flex-item">
+                                <label>Font:</label>
+                                <select id="fontFamily" name="font">
+                                    <option value="serif">serif</option>
+                                    <option value="arial">arial</option>
+                                    <option value="cursive">cursive</option>
+                                    <option value="fantasy">fantasy</option>
+                                </select> 
+                            </div>
+                            <div class="flex-item">
+                                <label>Size:</label>
+                                <input type="number" id="fontSize" value="40" name="fontSize" min="20" max="48">
+                            </div>
+                            <div class="flex-item">
+                                <label>Color:</label>
+                                <select id="fontColor" name="font">
+                                    <option value="black">black</option>
+                                    <option value="white">white</option>
+                                    <option value="yellow">yellow</option>
+                                    <option value="green">green</option>
+                                </select> 
+                            </div>
+                        </div>
+                        <div class="disp-flex-spc-between">
+                            <div class="flex-item">
+                                <label>Quantity:</label>
+                                <input type="number" value="1" id="quantity" name="quantity" min="1">
+                            </div>
+                            <button id="addToCart" class="btnBuy" type="button">Add to cart <i class="fas fa-shopping-cart"></i></button>
+                        </div> 
+                    </div>
+                    <div class="site-prices">
+                        <div id="shoppingList" class="shopping-cart">
+                            <div class="disp-flex-spc-between" style="border-bottom: 1px solid black;">
+                                <h3>Color</h3>
+                                <h3>Text</h3>
+                                <h3>Quantity</h3>
+                            </div>
+                            <p id="emptyList">Your cart is empty</p>
+                        </div>
+                        <div class="initial-price disp-flex-spc-between" style="border-top: 1px solid coral;">
+                            <h3>Price (each): </h3>
+                            <p>£ 4</p>
+                        </div>
+                        <div class="initial-price disp-flex-spc-between">
+                            <h3>Total: </h3>
+                            <p id="newPrice">£ 0</p>
+                        </div>
+                    </div>
+                    <button id="buyButton" class="btnBuy" type="submit">Buy </button>
+                </form>
+                
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <h2>VeneShirts</h2>
+        <div class="footer-info disp-flex-spc-around container">
+            <div class="references-footer">
+                <h3>Useful links:</h3>
+                <nav class="references">
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#">sign up</a></p>
+                    <p><a href="#">Sign in</a></p>
+                    <p><a href="#">contact</a></p>
+                </nav>
+            </div>
+            <div class="designer-details">
+                <h3>Designer details:</h3>
+                <p><span>Student ID:</span> 2731556</p>
+                <p><span>Module:</span> CSCU9B2</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

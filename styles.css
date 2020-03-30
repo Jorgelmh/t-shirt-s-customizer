@@ -1,0 +1,320 @@
+/*
+    ==========================
+            HOME PAGE
+    ==========================
+*/
+
+/* Global Classes */
+
+body{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1{
+    font-size: 2.618em;
+    text-shadow: 0 2px 20px rgba(0,0,0,.40);
+    text-transform: capitalize;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 20px rgba(0,0,0,.40);
+}
+
+label{
+    margin: 0 20px;
+    font-size: 1.3rem;
+}
+
+.disp-flex-spc-around{
+    display: flex;
+    justify-content: space-around;
+}
+.disp-flex-spc-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  Site - header  */
+
+.site-header{
+    background: rgb(255,132,0);
+    background: linear-gradient(176deg, rgba(255,132,0,1) 0%, rgba(250,230,212,1) 100%);
+    padding: 0 10px;
+    height: 700px;
+    position: relative;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+     margin: 0 auto;
+    max-width: 1400px;
+}
+
+.references p{
+    padding: 10px;
+}
+
+.header-text{
+    float: left;
+    width: 40%;
+    padding-top: 30px;
+    color: white;
+}
+
+.header-text p{
+    font-size: 1.3rem;
+}
+
+.header-img img{
+    display: block;
+    width: 60%;
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.references p a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-shadow: 0 2px 20px rgba(0,0,0,.40);
+}
+
+.references p{
+    transition: all .5s ease-in-out;
+}
+
+.references p:hover, .companyName:hover, #buyButton:hover{
+    transform: scale(1.1);
+}
+
+.companyName a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.companyName{
+    margin: auto 0;
+    transition: all .5s ease-in-out;
+}
+
+/*  Site - main  */
+
+.site-order-info{
+    position: relative;
+}
+
+.site-order-info svg{
+    position: absolute;
+    bottom: 100%;
+    fill: white;
+}
+
+.site-order-info h2, .site-features h2{
+    color: darkorange;
+}
+
+.order-description{
+    float: left;
+    width: 50%;
+}
+
+.order-description h3{
+    text-shadow: 0 2px 20px rgba(0,0,0,.40);
+    font-size: 1.6rem;
+}
+.order-description p {
+    font-size: 1.2rem;
+}
+
+.order-description p.order-button{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.order-description a{
+    border-radius: 10%;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    background-color: #fc7100;
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+    transition: all .5s ease-in-out;
+}
+
+.order-description a:hover{
+    background-color: #fc3b00;
+}
+
+.customized-t-shirts img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+    max-width: 450px;
+}
+
+/* SITE-FEATURES */
+
+.site-features{
+    padding: 20px 0;
+}
+
+.single-feature img{
+    max-height: 200px;
+}
+
+.features{
+    padding: 20px 0;
+}
+
+.single-feature h3{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* SITE-FOOTERS */
+
+.site-footer{
+    background-color: #fca400ec;
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+}
+
+.site-footer h2{
+    padding: 20px;
+    color: white;
+    margin: 0;
+}
+
+.references-footer .references p{
+    margin: 0;
+}
+
+.designer-details p span{
+    font-weight: bold;
+
+}
+
+/*
+    ==========================
+            ORDER PAGE
+    ==========================
+*/
+
+.header-order{
+    background: rgb(255,132,0);
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+
+}
+
+.colors{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.flex-item .inputElements{
+    width: 85%;
+}
+
+.colors button{
+    padding: 10px;
+    margin: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+}
+
+#red{
+    padding: 2.5px;
+}
+
+.input-items{
+    width: 85%;
+    font-size: 1.2rem;
+}
+.edit-canvas{
+    float: left;
+    width: 50%;
+    min-height: 400px;
+}
+
+.shirt-form h3{
+    width: 20%;
+    text-align: left;
+}
+
+
+#quantity{
+    width: 60px;
+}
+
+.site-edit-shirt h1{
+    text-align: center;
+    color: coral;
+    border-bottom: 1px solid black;
+}
+
+
+canvas{
+    width: 90%;
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+    display: block;
+    margin: auto;
+    border-radius: 5%;
+}
+
+/* site-prices */
+
+.site-prices h3, .site-prices p{
+    margin-bottom: 0;
+}
+
+.btnBuy{
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1dfc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+    box-shadow: 2px 3px 41px -16px rgba(0,0,0,0.75);
+    font-size: 1.4rem;
+}
+
+.shopping-cart h3, .shopping-cart p{
+    text-align: center;
+}
+.shopping-cart p{
+    margin: 10px;
+}
+
+
+
+
+
